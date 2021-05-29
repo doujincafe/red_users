@@ -4,4 +4,4 @@ A simple python script that collects per user data of snatched torrents from Red
 ## Configuration
 Edit the script to enter the host, port, username and password of your Deluge daemon. Create an API key on Redacted and enter it into the script too. You might also want to change the path to the csv file.
 
-Install the [Execute](https://dev.deluge-torrent.org/wiki/Plugins/Execute) plugin in your Deluge client. Then go the settings of Execute and create a new command. As event select "Torrent Completed" and for Command enter the path of the script. Make sure the script is executable.
+Activate the [Execute](https://dev.deluge-torrent.org/wiki/Plugins/Execute) plugin in your Deluge client. Then go to the settings of Execute and create a new command. As event select "Torrent Completed" and for Command enter the path of the script. Make sure the script is executable.
