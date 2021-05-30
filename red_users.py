@@ -7,8 +7,8 @@ import requests
 from deluge_client import DelugeRPCClient
 
 path = 'data.csv' #Path to csv file
-host = '127.0.0.1', #Deluge host
-port = 0, #Deluge port
+host = '127.0.0.1' #Deluge host
+port = 0 #Deluge port
 username = '' #Deluge username
 password = '' #Deluge password
 api_key = '' #Redacted API key
