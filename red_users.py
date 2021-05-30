@@ -55,7 +55,11 @@ status = client.call('core.get_torrent_status', torrent_id, ['tracker_host', 'ra
 if status['tracker_host'] != 'flacsfor.me':
     quit()
 
-headers = {'Authorization': api_key}  
+headers = {
+    'Authorization': api_key,
+    'User-Agent': 'red_users/1.0 (Confruggy)'
+}
+
 response = requests.get('https://redacted.ch/ajax.php?action=torrent&hash=' + torrent_id.upper(), headers=headers)
 torrent = json.loads(response.text)['response']['torrent']
 user_id = str(torrent['userId'])
